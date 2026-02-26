@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores Quico & Asociados | Jorge Joel Flores Quico</title>
+    <style>
+        :root {
+            --azul-corporativo: #0a2e5c;
+            --azul-claro: #0056b3;
+            --dorado: #b89355;
+            --blanco: #ffffff;
+            --gris-fondo: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+        
+        /* Navegación */
+        header { 
+            background: var(--blanco); 
+            padding: 15px 8%; 
+            display: flex; justify-content: space-between; align-items: center; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-weight: bold; color: var(--azul-corporativo); font-size: 1.4rem; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(10, 46, 92, 0.85), rgba(10, 46, 92, 0.85)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000'); 
+            background-size: cover; background-position: center; color: var(--blanco); padding: 120px 10%; text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; color: var(--dorado); }
+
+        /* Secciones Generales */
+        .container { padding: 80px 10%; }
+        .text-center { text-align: center; }
+        .bg-light { background: var(--gris-fondo); }
+
+        /* Misión y Visión */
+        .mv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+        .card { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--dorado); }
+
+        /* FAQ Especializado */
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 20px; border-radius: 5px; border-left: 4px solid var(--azul-claro); }
+        .faq-item h4 { margin: 0 0 10px 0; color: var(--azul-corporativo); }
+
+        /* Botón WhatsApp */
+        .btn-wa { background: #25d366; color: white; padding: 18px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; display: inline-block; transition: 0.3s; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+        .btn-wa:hover { transform: scale(1.05); background: #128c7e; }
+
+        /* Footer */
+        footer { background: var(--azul-corporativo); color: white; padding: 60px 10% 20px; text-align: center; }
+        .footer-info { margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">FLORES QUICO & ASOCIADOS</div>
+    <nav>
+        <a href="#inicio" style="margin-left:20px; text-decoration:none; color: var(--azul-corporativo); font-weight: 500;">Inicio</a>
+        <a href="#nosotros" style="margin-left:20px; text-decoration:none; color: var(--azul-corporativo); font-weight: 500;">Nosotros</a>
+        <a href="#faq" style="margin-left:20px; text-decoration:none; color: var(--azul-corporativo); font-weight: 500;">Preguntas</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <p style="text-transform: uppercase; letter-spacing: 2px;">Estudio Jurídico Profesional</p>
+    <h1>Jorge Joel Flores Quico</h1>
+    <p style="font-size: 1.3rem; max-width: 800px; margin: 20px auto 40px;">Especialista en Derecho Penal, Civil, Laboral y Administrativo. Brindamos la asesoría legal que usted necesita en Pisco y toda la región Ica.</p>
+    <a href="https://wa.me/51960961226" target="_blank" class="btn-wa">📱 Consultar por WhatsApp</a>
+</section>
+
+<section class="container" id="nosotros">
+    <h2 class="text-center" style="color: var(--azul-corporativo);">Nuestra Identidad</h2>
+    <div class="mv-grid">
+        <div class="card">
+            <h3 style="color: var(--azul-claro);">Misión</h3>
+            <p>Brindar defensa y asesoría legal de alta calidad, fundamentada en la ética y el rigor jurídico. Nuestra misión es garantizar que cada cliente en San Clemente y Pisco reciba una representación justa y efectiva, protegiendo su libertad, su patrimonio y sus derechos laborales.</p>
+        </div>
+        <div class="card">
+            <h3 style="color: var(--azul-claro);">Visión</h3>
+            <p>Ser reconocidos como el estudio jurídico más confiable y eficiente de la provincia de Pisco hacia el 2030, destacando por nuestra capacidad para resolver casos complejos y por nuestra contribución a una sociedad más justa a través de la práctica legal íntegra.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container bg-light" id="faq">
+    <h2 class="text-center" style="color: var(--azul-corporativo);">Consultas Frecuentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h4>¿Qué debo hacer si tengo una emergencia penal o detención?</h4>
+            <p>Debe contactarnos de inmediato. Como especialistas en Derecho Penal, ofrecemos asistencia en comisarías y juzgados las 24 horas para garantizar que sus derechos no sean vulnerados desde el primer momento.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Cómo recupero mis beneficios sociales si fui despedido?</h4>
+            <p>En el área de Derecho Laboral, analizamos su caso, calculamos su liquidación y lo representamos ante la Sunafil o el Poder Judicial para asegurar que reciba lo que por ley le corresponde.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Realizan trámites de herencias o títulos de propiedad?</h4>
+            <p>Sí, dentro de nuestra especialidad en Derecho Civil gestionamos procesos de sucesión intestada, rectificación de áreas y saneamiento físico legal de propiedades.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contacto">
+    <div class="footer-info">
+        <h3>ESTUDIO JURÍDICO FLORES QUICO & ASOCIADOS</h3>
+        <p><strong>Titular:</strong> Jorge Joel Flores Quico</p>
+        <p>📍 Av. Panamericana N° 1230, San Clemente, Pisco - Ica, Perú</p>
+        <p>📞 Central: 960 961 226 | ✉️ abg_flores1@hotmail.com</p>
+        <p>🔵 Facebook: Jorge Flores Quico</p>
+    </div>
+    <p style="font-size: 0.85rem; opacity: 0.7;">&copy; 2026 Flores Quico & Asociados. Todos los derechos reservados. | Diseñado para la excelencia jurídica.</p>
+</footer>
+
+</body>
+</html>
